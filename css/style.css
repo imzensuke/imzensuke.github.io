@@ -14,6 +14,25 @@ body {
   background: mediumpurple;
 }
 
+.navigation
+{
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 120px;
+  height: 60px;
+  background: #fff;
+  box-shadow: 0 25px 35px rgba(0,0,0,0.1);
+}
+
+.navigation .zenuskeBox
+{
+  position: relative;
+  width: 60px;
+  height: 60px;
+  background: #f00;
+}
+
 h2 {
   position: relative;
   font-size: 5em;
