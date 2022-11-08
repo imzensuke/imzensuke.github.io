@@ -41,6 +41,21 @@ body {
   width: 60px;
   height: 60px;
   background: #fff;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  transition: 0.5s;
+  transition-delay: 0.5s;
+}
+
+.navigation.active .zensukeBox {
+  width: calc(100% - 60px);
+}
+
+.navigation .zensukeBox .username {
+  white-space: nowrap;
+  color: mediumpurple;
+  font-size: 1.1em;
 }
 
 .navigation .zensukeBox .imgBox {
