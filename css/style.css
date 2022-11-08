@@ -81,7 +81,16 @@ body {
   height: 2px;
   background: #555;
   transform: translateY(10px);
-  transition: 0.5s
+  transition: 0.5s;
+}
+
+.navigation.active .menuToggle::before{
+  transform: translateY(0px) rotate(45deg);
+  box-shadow: 0 0 #555;
+}
+
+.navigation.active .menuToggle::after{
+  transform: translateY(0px) rotate(-45deg);
 }
 
 h2 {
