@@ -118,6 +118,16 @@ body {
   transform: translateY(0px) rotate(-45deg);
 }
 
+.menu {
+  position: absolute;
+  width: 100%;
+  height: calc(100% - 60px);
+  margin-top: 60px;
+  margin-right: 350px;
+  padding: 20px;
+  border-top: 1px solid rgba(0,0,0,0.1);
+}
+
 h2 {
   position: relative;
   font-size: 5em;
@@ -209,22 +219,4 @@ h2 span:nth-child(even)
   {
     clip-path: polygon(0 66%, 14% 73%, 34% 76%, 50% 71%, 64% 62%, 79% 55%, 100% 51%, 100% 100%, 0% 100%);
   }
-}
 */
-@media only screen and (min-width: 768px){
-  .navigation.active
-  {
-    width: 300px;
-    height: 400px;
-    transition: width 0.5s, height 0.5s;
-    transition-delay: 0s, 0.75s;
-  }
-}
-.menu {
-  position: absolute;
-  width: 100%;
-  height: calc(100% - 60px);
-  margin-top: 60px;
-  padding: 20px;
-  border-top: 1px solid rgba(0,0,0,0.1);
-}
