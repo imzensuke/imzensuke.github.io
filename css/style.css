@@ -31,7 +31,7 @@ body {
 
 .navigation.active{
   width: 300px;
-  height: 400px;
+  height: 250px;
   transition: width 0.5s, height 0.5s;
   transition-delay: 0s, 0.75s;
 }
@@ -195,3 +195,12 @@ h2 span:nth-child(even)
   }
 }
 */
+@media only screen and (min-width: 768px){
+  .navigation.active
+  {
+    width: 300px;
+    height: 400px;
+    transition: width 0.5s, height 0.5s;
+    transition-delay: 0s, 0.75s;
+  }
+}
