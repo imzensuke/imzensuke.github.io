@@ -5,7 +5,55 @@
   box-sizing: border-box;
   font-family: cursive;
 }
-.zensuke {
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: mediumpurple;
+}
+
+h2 {
+  position: relative;
+  font-size: 5em;
+  color: mediumpurple;
+  text-transform: uppercase;
+  text-align: center;
+  -webkit-box-reflect: below -42px linear-gradient(transparent, #0004);
+}
+
+h2 span{
+  animation: animate 5s linear infinite;
+}
+
+h2 span:nth-child(even)
+{
+  animation-delay: 0.4s;
+}
+
+@keyframes animate 
+{
+  0%,18%,20%,50.1%,60%,65.1%,80%,90.1%,92%
+  {
+    color: mediumpurple;
+    text-shadow: none;
+  }
+  18.1%,20.1%,30%,50%,60.1%,65%,80.1%,90%,92.1%,100%
+  {
+    color: #fff;
+    text-shadow: 0 0 10px aqua,
+      0 0 20px aqua,
+      0 0 40px aqua,
+      0 0 80px aqua,
+      0 0 160px aqua,
+      0 0 400px aqua;
+  }
+}
+  
+
+/* hide previous styles */
+/* .zensuke {
   position: relative;
   width: 100%;
   height: 100%;
@@ -14,7 +62,8 @@
   align-items: center;
   background: mediumpurple; /*simple is better at start; linear-gradient(to right, aqua, mediumpurple); */
 }
-
+*/
+/*
 .zensuke h2{
   position: absolute;
   font-size: 26vw;
@@ -57,3 +106,4 @@
     clip-path: polygon(0 66%, 14% 73%, 34% 76%, 50% 71%, 64% 62%, 79% 55%, 100% 51%, 100% 100%, 0% 100%);
   }
 }
+*/
