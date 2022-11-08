@@ -25,12 +25,30 @@ body {
   box-shadow: 0 25px 35px rgba(0,0,0,0.1);
 }
 
-.navigation .zenuskeBox
-{
+.navigation .zenuskeBox {
   position: relative;
   width: 60px;
   height: 60px;
   background: #f00;
+}
+
+.navigation .zensukeBox .imgBox {
+  position; relative;
+  min-width: 60px;
+  height: 60px;
+  background: #000;
+  border-radius: 50%;
+  border: 10px solid #fff;
+  overflow: hidden;
+}
+
+.navigation .zensukeBox .imgBox img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 h2 {
